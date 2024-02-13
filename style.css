@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 65px;
+    
+
+}
+
+nav .wrapper{
+    background:  #ffffff;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.wrapper .nav-link{
+    display: inline-flex;
+}
+
+.wrapper .logo a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.wrapper .logo a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav-link li{
+    list-style: none;
+}
+
+.nav-link li a{
+    color: #000000;
+    text-decoration: none;
+    font-size:  18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-link li a:hover{
+    background: #e5e5e5;
+}
+
+.nav-link .drop-menu{
+    background: #e5e5e5;
+    width: 250px;
+    top: 65px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-link li:hover .drop-menu,
+.nav-link li:hover .mega-box{
+    opacity: 1;
+    visibility: visible;
+    top: 65px;
+    transition: all 0.3s ease;
+}
+
+.drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+}
+
+.mega-box{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mega-box .content{
+    background: #e5e5e5;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+}
+
+.content .row:nth-child(1),
+.content .row:nth-child(2){
+    border-left: 0;
+}
+.content .row .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content .row header{
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.content .row .mega-link{
+    margin-left: -40px;
+    border-left: 2 px solid rgba(27, 129, 253, 0.09);
+}
+.row .mega-link li{
+    padding: 0 20px;
+}
+.row .mega-link li a{
+    padding: 0 20px;
+    font-size:  17px;
+    display: block;
+}
